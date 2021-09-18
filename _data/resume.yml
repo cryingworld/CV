@@ -1,28 +1,29 @@
 # 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
 # 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
 
-title: "个人简历"
+title: "推免简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
-name: "个人简历"
-# jobtitle: "求职意向" #可空不显示
+name: "李林轩"
+jobtitle: "推免简历" #可空不显示
 photo: "assets/img/一寸照片.jpg" #照片可空，不显示
+
 
 #联系方式
 contact: #联系方式连接等3~5行
-- text: "2439262584@qq.com" #文本内容
-  href: '2439262584@qq.com' #链接，无链接则空  
+- text: "20184320@cqu.edu.cn" #文本内容
+  href: "20184320@cqu.edu.cn" #链接，无链接则空
   icon: 'icons/email.svg' #图标 svg文件
-
-- text: "18306019491"
-  href: 'tel:18306019491'
+  
+- text: "17694854084"
+  href: 'tel:1234567890'
   icon: 'icons/phone.svg'
-
-# - text: "your-website.com"
-#   href: 'http://your-website.com'
-#   icon: 'icons/web.svg'
-
-- text: "GitHubID"
-  href: 'https://github.com/cryingworld'
+  
+- text: "https://llx-08.github.io/"
+  href: 'https://llx-08.github.io/'
+  icon: 'icons/web.svg'
+  
+- text: "llx-08"
+  href: 'https://github.com/llx-08'
   icon: "icons/github.svg"
   attr: 'target="_blank"' #新标签页打开
   # - text: "地址"
@@ -31,80 +32,98 @@ contact: #联系方式连接等3~5行
 #main下面是主体内容，类别条数不限
 main: #简历主要内容，
 - type: education #类别为ID
-  name: 个人信息 #显示名称，空则使用type
+  name: '个人信息' #显示名称，空则使用type
   content: #内容基本格式 标题-副标题-日期-详细内容 (都允许空)
-  - title: 姓名：段天保
-    sub: 年龄：21
+  - title: 姓名：李林轩                         
+    sub: 年龄：19
   - title: 学校：重庆大学
-    duration: 2018年9月-2022年
-    sub: 本科大四在读
-    detail: 专业：计算机科学与技术
+    sub: 本科大三在读
+    detail: 来自重庆大学计算机学院，专业为计算机科学与技术。前五个学期GPA为3.65，在年级总排名16%左右。热爱自己的专业，保持成绩与掌握基础知识的同时参与了网络方面的项目，希望能够在研究生阶段加以钻研
+#  - title: Your University
+#    duration: Aug 2007 - Jun 2011
+#    sub: Ut enim ad minim veniam
+#    detail: Master Bachelor of Computer Science & Technology.
 
 - type: skills
   name: "专业技能"
   content:
-  - title: 编程语言
-    items: #itmems 可以小块的方式显示
-    - Python
-    - HTML、CSS、JavaScript
+  - title: C++
+    detail: 能够使用常见的数据结构，STL 等实现算法
+  - title: Python
+    detail: 用 python 实现过神经网络，遗传算法等。有简单开发 Django Web 的能力
+  - title: Verilog
+    detail: 能够使用 verilog 进行简单的 IP 核设计与开发，能够实现一些基本电路，实现过Cache，五级流水线CPU等，准备在暑假参加龙芯杯系统能力设计大赛
+
   - title: 
-    detail: 计算机网络，操作系统基本概念熟悉；
-      接触过Linux，做过简单实验；
-      能够使用git等工具
-
-
-  - title: 其他技能
-    detail: 英语四级已过;
-      机动车驾驶证
+    detail: 计算机网络，计算机组成原理基本概念熟悉；
+      接触过Linux，并做过简单的实验；
+      对基本数据结构了解并能简单运用；
+      了解常用的基本算法，并能够使用 git 等工具
+  - title: 英语技能   四级：560，六级：492，具备阅读英文论文以及浏览外文网站 (如 stackoverflow) 的能力
 
 - type: projects
   name: 项目经历
   content:
-  - title: 7lema网站设计与实现
-    summary: 使用DJANGO作为后端框架，模仿外卖系统制作网站。主要工作为设计编写菜品功能模块的编写。
+  - title: IP 块转发端侧发送架构研究
+#    duration: xxxx年xx月 - yyyy年yy月
+    summary: 与华为合作项目，采用 OMNET++ 作为仿真工具，研究在新的转发协议下网络的性能。主要工作为在 OMNET++ 上设计实现优先级转发机制，并且对实现的优先级转发机制在不同的参数与流量模型下进行性能测试，以及对其他同学实现的机制进行测试。项目目前仍在进行，处于编写文档的阶段
+#    sub: 维护者
+  - title: MIPS SOC 设计与性能优化
+    summary: 用 VERILOG 编写 CPU 逻辑电路，两周内实现了五级流水线的 CPU，完成 52 条指令、SRAM 接口、AXI 接口的添加，完成 CACHE 的设计，能够通过仿真测试点以及生成比特流上板
     sub: 课程设计项目
-
-  - title: miniSemester 商城后台管理系统
-    summary: SSM项目，前端使用Layuimini的简易商城后台管理系统。主要工作前端页面的显示。
+    
+  - title: 7lema 网站设计与实现
+    summary: 使用 DJANGO 作为后端框架，模仿外卖系统制作网站，在项目中负责设计编写菜品，商店等功能模块的后端代码
     sub: 课程设计项目
+#    detail:
+#      md: _data/demo.md
+#    sub: Creator and maintainer.
    #可继续添加更多内容
-
-others: #其他列表显示
-- type: others #ID可以为空
-  name: 个人经历
-  content: #选择需要的格式
-  - title: 
-    list:
-    - 2019年-2020年 重庆大学计算机学院易班 副会长
-    - 2019年-2020年 重庆大学跆拳道协会 副会长
-
+   
+#others 其他简略内容(列表)
 others: #其他列表显示
 - type: others #ID可以为空
   name: 个人荣誉
   content: #选择需要的格式
+#  - 单行文字
+#  - title: "加粗:"
+#    text: "列表项二"
+#  - title: "兴趣:"
+#    items: #单行列表
+#    - 睡觉
+#    - 吃饭
+#    - coding
   - title: 
     list:
-    - 2019年4月27日 重庆市第十六届大学生跆拳道邀请赛团体品势第一名
-    - 2019年7月22日 2019年中国大学生跆拳道竞标赛第五名
-    - 2020年 重庆大学第六届“互联网+”大学生创新创业大赛校级优胜奖
-
-
+    - 全国大学生数学建模重庆市二等奖,
+    - 2019.5.12 全国大学生英语竞赛 C 类二等奖,
+    - 2020.11 第三届全国高校绿色计算系列大赛三等奖,
+    - 计算机学院综合奖学金乙等奖 *3,
+    - 优秀学生，优秀学生干部，优秀共青团员
 #- type: 
 #  name: '其他'
 #  content: #选择需要的格式
 #  - 单行文字
 #  - 如果有可以继续添加
 
+# - type: projects
+#   name: 志愿方向
+#   content:
+#   - title: 网络方向
+#     sub: 
+#     detail: 
+    
+    
 #footer 脚注，打印版和web版不同不显示    
-# footer: #脚注多组
-#   print: #打印版markdown或者html
-#   screen:
-#   - text: "简历脚注"
-#   #   href: '/'
-#   - text: "Made with &hearts; by NewFuture"
-#     href: "https://github.com/NewFuture/CV/"
+footer: #脚注多组
+  print: #打印版markdown或者html
+  screen:
+  - text: "简历脚注"
+  #   href: '/'
+  - text: "Made with &hearts; by NewFuture"
+    href: "https://github.com/NewFuture/CV/"
 
-# #页面额外js脚本，如xx统计
-# scripts:
-# #- src: "assets/js/resume.js"
-# #  defer: defer #可以设置defer或者sync异步加载
+#页面额外js脚本，如xx统计
+scripts:
+#- src: "assets/js/resume.js"
+#  defer: defer #可以设置defer或者sync异步加载
