@@ -3,7 +3,7 @@
 
 title: "个人简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
-name: "段天保"
+name: "个人简历"
 # jobtitle: "求职意向" #可空不显示
 photo: "assets/img/一寸照片.jpg" #照片可空，不显示
 
@@ -17,12 +17,12 @@ contact: #联系方式连接等3~5行
   href: 'tel:18306019491'
   icon: 'icons/phone.svg'
 
-- text: "your-website.com"
-  href: 'http://your-website.com'
-  icon: 'icons/web.svg'
+# - text: "your-website.com"
+#   href: 'http://your-website.com'
+#   icon: 'icons/web.svg'
 
 - text: "GitHubID"
-  href: 'https://github.com/NewFuture'
+  href: 'https://github.com/cryingworld'
   icon: "icons/github.svg"
   attr: 'target="_blank"' #新标签页打开
   # - text: "地址"
@@ -49,7 +49,8 @@ main: #简历主要内容，
     - HTML、CSS、JavaScript
     - 
   - title: 
-    detail: 计算机网络，操作系统基本概念熟悉;接触过Linux,做过简单实验;能够使用git等工具
+    detail: 计算机网络，操作系统基本概念熟悉；接触过Linux，做过简单实验；能够使用git等工具
+
 
   - title: 其他技能
     detail: 英语四级已过;机动车驾驶证
@@ -76,36 +77,36 @@ main: #简历主要内容，
 #     detail: Details can be collapsed in Chrome Safari, Firefox, Opera and so on. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 - type: projects
-  name: Projects
+  name: 项目经历
   content:
-  - title: 项目名称
-    duration: xxxx年xx月 - yyyy年yy月
-    detail: 项目和工作介绍，项目总结.
-    sub: 维护者
-  - title: Project Name
-    summary: Projects' introduction or summary
-    detail:
-      md: _data/demo.md
-    sub: Creator and maintainer.
+  - title: 7lema网站设计与实现
+    summary: 使用DJANGO作为后端框架，模仿外卖系统制作网站。主要工作为设计编写菜品功能模块的编写。
+    sub: 课程设计项目
+
+  - title: miniSemester 商城后台管理系统
+    summary: SSM项目，前端使用Layuimini的简易商城后台管理系统。主要工作前端页面的显示。
+    sub: 课程设计项目
    #可继续添加更多内容
+
 
 #others 其他简略内容(列表)
 others: #其他列表显示
 - type: others #ID可以为空
-  name: '其他'
+  name: 个人经历
   content: #选择需要的格式
-  - 单行文字
-  - title: "加粗:"
-    text: "列表项二"
-  - title: "兴趣:"
-    items: #单行列表
-    - 睡觉
-    - 吃饭
-    - coding
-  - title: 列表
-    list:
-    - 第一项
-    - 第二项
+  # - 单行文字
+  # - title: "加粗:"
+  #   text: "列表项二"
+  # - title: "兴趣:"
+  #   items: #单行列表
+  #   - 睡觉
+  #   - 吃饭
+  #   - coding
+  # - title: 列表
+  #   list:
+  #   - 第一项
+  #   - 第二项
+  title: 
 #- type: 
 #  name: '其他'
 #  content: #选择需要的格式
