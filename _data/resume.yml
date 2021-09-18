@@ -47,13 +47,15 @@ main: #简历主要内容，
     items: #itmems 可以小块的方式显示
     - Python
     - HTML、CSS、JavaScript
-    - 
   - title: 
-    detail: 计算机网络，操作系统基本概念熟悉；接触过Linux，做过简单实验；能够使用git等工具
+    detail: 计算机网络，操作系统基本概念熟悉；
+    接触过Linux，做过简单实验；
+    能够使用git等工具
 
 
   - title: 其他技能
-    detail: 英语四级已过;机动车驾驶证
+    detail: 英语四级已过;
+    机动车驾驶证
 
 
 # - type: experience
