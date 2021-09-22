@@ -21,7 +21,7 @@ contact: #联系方式连接等3~5行
 #   href: 'http://your-website.com'
 #   icon: 'icons/web.svg'
 
-- text: "GitHubID"
+- text: "cryingworld"
   href: 'https://github.com/cryingworld'
   icon: "icons/github.svg"
   attr: 'target="_blank"' #新标签页打开
