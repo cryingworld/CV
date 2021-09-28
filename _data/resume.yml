@@ -46,7 +46,7 @@ main: #简历主要内容，
   - title: 编程语言
     items: #itmems 可以小块的方式显示
     - Python
-    - HTML、CSS、JavaScript
+    - C++
   - title: 专业知识
     detail: 计算机网络，操作系统基本概念熟悉；
       接触过Linux，做过简单实验；
